@@ -1,0 +1,12 @@
+
+services:
+  web:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - 3000:4000
+    environment:
+      - SERVER_ENV=myServer
+      - KEY_NAME=myKey
+      - NODE_ENV=production
+      - PORT=4000
