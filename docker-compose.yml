@@ -1,12 +1,8 @@
-
+version: '3.8'
 services:
   web:
-    build:
-      dockerfile: Dockerfile
+    image: test
     ports:
-      - 3000:4000
+      - 3000:3000
     environment:
-      - SERVER_ENV=myServer
-      - KEY_NAME=myKey
-      - NODE_ENV=production
-      - PORT=4000
+      - NEXT_PUBLIC_ENV_VARIABLE=variable
